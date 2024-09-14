@@ -53,7 +53,7 @@
 </template>
 
 <script setup lang="ts">
-  import { useServerRequest } from '@/composables/useServerRequest';
+  import { useServerRequest } from '~/composables/useServerRequest';
 
   const route = useRoute();
 

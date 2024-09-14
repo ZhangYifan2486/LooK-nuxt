@@ -60,8 +60,8 @@
 </template>
 
 <script setup lang="ts">
-  import { useClientRequest } from '@/composables/useClientRequest';
-  import { useServerRequest } from '@/composables/useServerRequest';
+  import { useClientRequest } from '~/composables/useClientRequest';
+  import { useServerRequest } from '~/composables/useServerRequest';
 
   const route = useRoute();
   const activeName = ref('first');

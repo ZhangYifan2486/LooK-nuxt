@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-  import { useServerRequest } from '@/composables/useServerRequest';
+  import { useServerRequest } from '~/composables/useServerRequest';
 
   // 获取用户信息
   const { data: userData } = await useServerRequest<{ data: { email: string; userId: number } }>('/web/user/info');

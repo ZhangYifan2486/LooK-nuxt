@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { useServerRequest } from '@/composables/useServerRequest';
+  import { useServerRequest } from '~/composables/useServerRequest';
 
   const runtimeConfig = useRuntimeConfig();
   const movieList = ref<any[]>([]);

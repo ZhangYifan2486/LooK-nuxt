@@ -37,9 +37,9 @@
 
 <script setup lang="ts">
   import CollectData from '@/components/user/CollectData.vue';
-  import UserInfoData from '@/components/user/UserInfoData.vue';
-  import { useServerRequest } from '@/composables/useServerRequest';
-  import { useClientRequest } from '@/composables/useClientRequest';
+  import UserInfoData from '~/components/user/UserInfoData.vue';
+  import { useServerRequest } from '~/composables/useServerRequest';
+  import { useClientRequest } from '~/composables/useClientRequest';
 
   definePageMeta({
     middleware: ['auth']
