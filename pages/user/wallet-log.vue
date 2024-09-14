@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-  import { useClientRequest } from '~/composables/useClientRequest';
+  import { useClientRequest } from '@/composables/useClientRequest';
 
   definePageMeta({
     middleware: ['auth']
