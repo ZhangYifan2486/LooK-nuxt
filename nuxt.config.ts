@@ -52,5 +52,14 @@ export default defineNuxtConfig({
         proxy: process.env.BASE_URL || 'http://101.37.70.236:4000' + '/**'
       }
     }
+  },
+  // 禁用 HMR
+  build: {
+    hotMiddleware: {
+      client: {
+        noInfo: true,
+        reload: true
+      }
+    }
   }
 });
