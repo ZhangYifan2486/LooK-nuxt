@@ -1,4 +1,9 @@
 export default defineNuxtConfig({
+  $development: undefined,
+  $env: undefined,
+  $meta: undefined,
+  $production: undefined,
+  $test: undefined,
   devtools: { enabled: process.env.DEV_TOOLS || true },
   // css单独文件引用，不使用内联
   experimental: {
@@ -50,15 +55,6 @@ export default defineNuxtConfig({
     routeRules: {
       '/server/**': {
         proxy: process.env.BASE_URL || 'http://101.37.70.236:4000' + '/**'
-      }
-    }
-  },
-  // 禁用 HMR
-  build: {
-    hotMiddleware: {
-      client: {
-        noInfo: true,
-        reload: true
       }
     }
   }
