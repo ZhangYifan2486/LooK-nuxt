@@ -143,10 +143,10 @@
 
 <script setup lang="ts">
   import QrcodeVue from 'qrcode.vue';
-  import { useLoginDialogVisible, useToken } from '@/composables/states';
-  import { useServerRequest } from '@/composables/useServerRequest';
-  import { FetchOptions, useClientRequest } from '@/composables/useClientRequest';
-  import { UserMovieBase, UserRate } from '@/types/column/movie';
+  import { useLoginDialogVisible, useToken } from '~/composables/states';
+  import { useServerRequest } from '~/composables/useServerRequest';
+  import { FetchOptions, useClientRequest } from '~/composables/useClientRequest';
+  import { UserMovieBase, UserRate } from '~/types/column/movie';
 
   const route = useRoute();
   const token = useToken();

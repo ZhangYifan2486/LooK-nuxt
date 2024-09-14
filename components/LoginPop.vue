@@ -57,8 +57,8 @@
 <script lang="ts" setup name="LoginPop">
   import { FormInstance } from 'element-plus';
   import { reactive } from '#imports';
-  import { useLoginDialogVisible, useRegDialogVisible } from '@/composables/states';
-  import { useClientRequest } from '@/composables/useClientRequest';
+  import { useLoginDialogVisible, useRegDialogVisible } from '~/composables/states';
+  import { useClientRequest } from '~/composables/useClientRequest';
 
   const token = useToken();
   const regDialogVisible = useRegDialogVisible();

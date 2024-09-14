@@ -106,12 +106,12 @@
   import 'xgplayer/dist/index.min.css';
   import 'xgplayer/es/plugins/danmu/index.css';
   import PresetPlayer from 'xgplayer';
-  import { useServerRequest } from '@/composables/useServerRequest';
-  import { useClientRequest } from '@/composables/useClientRequest';
-  import { MovieVideoInfo } from '@/types/column/video';
-  import { UserMovieBase } from '@/types/column/movie';
-  import '@/plugins/xgplayer/payTip/index.css';
-  import PayTip from '@/plugins/xgplayer/payTip';
+  import { useServerRequest } from '~/composables/useServerRequest';
+  import { useClientRequest } from '~/composables/useClientRequest';
+  import { MovieVideoInfo } from '~/types/column/video';
+  import { UserMovieBase } from '~/types/column/movie';
+  import '~/plugins/xgplayer/payTip/index.css';
+  import PayTip from '~/plugins/xgplayer/payTip';
 
   const token = useToken();
   const loginDialogVisible = useLoginDialogVisible();

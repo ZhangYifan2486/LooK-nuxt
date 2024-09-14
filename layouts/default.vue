@@ -72,8 +72,8 @@
 </template>
 
 <script setup lang="ts">
-  import LoginPop from '@/components/LoginPop.vue';
-  import { useServerRequest } from '@/composables/useServerRequest';
+  import LoginPop from '~/components/LoginPop.vue';
+  import { useServerRequest } from '~/composables/useServerRequest';
 
   const tokenCookie = useCookie<string | undefined>('token');
   const token = useToken();
