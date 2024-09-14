@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-  import { useServerRequest } from '~/composables/useServerRequest';
-  import { BannerItem, LinkItem } from '~/types/index';
+  import { useServerRequest } from '@/composables/useServerRequest';
+  import { BannerItem, LinkItem } from '@/types/index';
 
   // banner数据
   const getBannerRequest = useServerRequest<ResPage<BannerItem[]>>('/basic/banner/list');

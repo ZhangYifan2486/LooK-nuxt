@@ -123,8 +123,8 @@
 </template>
 
 <script setup lang="ts">
-  import { useServerRequest } from '~/composables/useServerRequest';
-  import { useClientRequest } from '~/composables/useClientRequest';
+  import { useServerRequest } from '@/composables/useServerRequest';
+  import { useClientRequest } from '@/composables/useClientRequest';
 
   definePageMeta({
     key: route => route.fullPath
